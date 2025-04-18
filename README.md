@@ -7,8 +7,7 @@ Prodex is a web-based product management system that helps you to manage your pr
 - **Total Calculation**: The total price is automatically calculated based on price, ads, taxes, and discount.
 - **Search**: Search for products by title or category.
 - **Update & Delete**: Edit or remove products from the list.
-- **Dark/Light Mode**: Switch between dark and light themes.
-
+- 
 ## Tech Stack
 - **Frontend**:
   - HTML
