@@ -1,0 +1,216 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #1e1e1e; /* Dark gray background */
+    color: #f1f1f1; /* Light gray text */
+    padding: 20px;
+  }
+  
+  #cruds {
+    max-width: 87%;
+    margin: auto;
+    background: #2a2a2a; /* Slightly lighter gray for card */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(72, 168, 255, 0.1); /* Soft blue shadow */
+  }
+  
+/* Title Section */
+#title h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #ffffff; /* White color for h1 */
+    text-shadow: 0 0 2px #ffffff, 0 0 20px #ffffff; /* Soft white glow effect */
+  }
+  
+  #title h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #ffffff; /* White color for h2 */
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #ffffff; /* Subtle white shadow for h2 */
+  }
+  
+  
+  /* Inputs */
+  /* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+  #input input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background: #333; /* Dark background for inputs */
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  #input input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #4db8ff; /* Blue focus outline */
+  }
+
+  
+  /* Price Inputs */
+  #enterpricer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Total Button */
+  #total {
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    margin: 8px 0;
+    background: #444; /* Dark gray for total button */
+    color: #4db8ff; /* Light blue text */
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 0 8px #4db3f7; /* Soft blue shadow */
+    min-width: 100px;
+    text-align: center;
+  }
+  
+  #total::before {
+    content: 'Total: ';
+  }
+  
+  /* Count & Category */
+  #count_catogry {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  
+  #count_catogry input {
+    flex: 1;
+  }
+  
+  #count_catogry #submit {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  
+  #count_catogry #submit:hover {
+    background: #3a9fe6; /* Darker blue on hover */
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #4db8ff; /* Light blue background */
+    color: #1e1e1e; /* Dark text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 8px #4db8ff; /* Soft blue shadow */
+  }
+  
+  button:hover {
+    background-color: #3a9fe6; /* Darker blue on hover */
+    box-shadow: 0 0 16px #4db8ff; /* More intense blue shadow */
+  }
+  
+  /* Output Section */
+  #searcbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #searcbox input {
+    flex: 1;
+    padding: 10px;
+    background: #333; /* Dark background for search */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  #deleteAll button {
+    width: 100%; /* Full width */
+    padding: 8px; /* Adds padding */
+    margin-bottom: 15px;
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Adjust font size */
+    border: none; /* No border */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center text */
+    transition: 0.3s; /* Smooth transition */
+    box-sizing: border-box; /* Include padding and borders in width/height */
+}
+  #searcbox input:focus {
+    outline: none;
+    box-shadow: 0 0 14px #4db8ff; /* Blue focus shadow */
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    text-transform: uppercase;
+    border-collapse: collapse;
+    background: #2a2a2a; /* Darker background for the table */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(72, 168, 255, 0.1); /* Soft blue shadow */
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+  }
+  
+  th {
+    background-color: #4db8ff33; /* Semi-transparent light blue for table header */
+    color: #4db8ff; /* Light blue text */
+    text-shadow: 0 0 5px #4db8ff;
+  }
+  
+  td button {
+    padding: 6px 10px;
+    font-size: 0.9em;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    #enterpricer,
+    #count_catogry,
+    #searcbox {
+      grid-template-columns: 1fr !important;
+      flex-direction: column;
+    }
+  
+    table {
+      font-size: 0.8em;
+    }
+  }
